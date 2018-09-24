@@ -12,3 +12,13 @@ class DataItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class testItem(scrapy.Item):
+    tags = scrapy.Field()
+    author = scrapy.Field()
+    detail = scrapy.Field()
+    quote = scrapy.Field()
+
+class BiliItem(scrapy.Item):
+    url = scrapy.Field()
+    size = scrapy.Field()

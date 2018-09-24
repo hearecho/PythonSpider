@@ -1,0 +1,12 @@
+
+.gitignore
+.idea/inspectionProfiles/
+.idea/workspace.xml
+__pycache__/
+scrapy/data/data/__pycache__/
+scrapy/data/data/spiders/__pycache__/
+yundownload/login/__pycache__/
+yundownload/utils/__pycache__/
+"\345\237\272\347\241\200/\345\215\217\347\250\213/test/"
+/spiderEnv/
+/scrapy/data/saveData/

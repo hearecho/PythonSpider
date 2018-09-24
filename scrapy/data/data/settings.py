@@ -46,15 +46,16 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'data.middlewares.DataSpiderMiddleware': 543,
-#}
+# SPIDER_MIDDLEWARES = {
+   # 'data.middlewares.DataSpiderMiddleware': 543,
+# }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'data.middlewares.DataDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   # 'data.middlewares.DataDownloaderMiddleware': 543,
+    'data.middlewares.RandomUserAgentMiddleware':543
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -64,9 +65,12 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'data.pipelines.DataPipeline': 300,
-#}
+# ITEM_PIPELINES = {
+#    'data.pipelines.FilterPipeline': 300,
+#     'data.pipelines.SaveMongoPipeline': 400,
+# }
+# MONGO_URI="192.168.31.63:27017"
+# MONGO_DB="data"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
