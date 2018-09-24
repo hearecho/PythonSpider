@@ -41,7 +41,7 @@ url = "https://api.bilibili.com/x/web-interface/archive/stat?aid=27348654"
 
 ![结果](img/视频信息.png)
 
-####4.相关视频
+#### 4.相关视频
 
 ~~~python
 url = "https://api.bilibili.com/x/web-interface/archive/related?aid=27348654"
@@ -66,7 +66,7 @@ url = "https://api.bilibili.com/x/space/upstat?mid=123372"
 
 ![](img/总播放量.png)
 
-####7.用户信息
+#### 7.用户信息
 
 ```python
 #请求头里面最重要的 Referer  请求来源

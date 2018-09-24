@@ -12,6 +12,8 @@
             return item
 '''
 from scrapy.exceptions import DropItem
+from scrapy import Request
+from scrapy.pipelines.images import ImagesPipeline
 import pymongo
 '''
 处理信息用的管道
@@ -55,6 +57,29 @@ class SaveMongoPipeline(object):
 
     def close_spider(self,spider):
         self.client.close()
+
+
+'''
+    自定义图片Pipelies
+'''
+class CustomImagesPipeline(ImagesPipeline):
+    def file_path(self, request, response=None, info=None):
+        url = request.url
+        #https://i0.hdslb.com/bfs/album/67cf33ca7fbc2c34ce52fedf5f998abb34b05159.jpg
+        file_name = url.split("/")[-1]
+        return file_name
+
+    def item_completed(self, results, item, info):
+        image_paths = [x['path'] for ok,x in results if ok]
+        if not image_paths:
+            raise DropItem('Image Downloaded Failed')
+        return item
+
+    def get_media_requests(self, item, info):
+        yield Request(item['url'])
+
+
+
 
 
 

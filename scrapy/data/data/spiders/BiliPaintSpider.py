@@ -12,7 +12,7 @@ from urllib.parse import urlencode
 
 class BiliSpider(scrapy.Spider):
     name = "bili"
-    MAX_PAGE = 100
+    MAX_PAGE = 50
     def start_requests(self):
         data = {"page_num":{},"page_size":20}
         baseUrl = "https://api.vc.bilibili.com/link_draw/v2/Doc/list?category=all&type=hot&"
@@ -26,11 +26,15 @@ class BiliSpider(scrapy.Spider):
     def parse(self, response):
         data = json.loads(response.text)
         for item in data.get("data").get("items"):
-            pictures = item.get("item").get("pictures")
+            item = item.get("item")
+            pictures = item.get("pictures")
+            title = item.get("title")
             for picture in pictures:
+                index = 0
                 img = BiliItem()
                 img["url"] = picture.get("img_src")
                 img["size"] = picture.get("img_size")
+                img["title"] = title
                 yield img
 
 

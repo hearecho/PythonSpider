@@ -27,7 +27,8 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+# 爬取速度  s为单位
+DOWNLOAD_DELAY = 1
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -54,7 +55,7 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    # 'data.middlewares.DataDownloaderMiddleware': 543,
-    'data.middlewares.RandomUserAgentMiddleware':543
+    'data.middlewares.RandomHeadersMiddleware':543
 }
 
 # Enable or disable extensions
@@ -66,10 +67,11 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    'data.pipelines.FilterPipeline': 300,
-#     'data.pipelines.SaveMongoPipeline': 400,
+    # 'data.pipelines.CustomImagesPipeline':300,
+   # 'data.pipelines.FilterPipeline': 300,
+   #  'data.pipelines.SaveMongoPipeline': 400,
 # }
-# MONGO_URI="192.168.31.63:27017"
+# MONGO_URI="127.0.0.1:27017"
 # MONGO_DB="data"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -92,3 +94,8 @@ DOWNLOADER_MIDDLEWARES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+'''
+    自定义配置
+'''
+IMAGES_STORE = "saveData/images"

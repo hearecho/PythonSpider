@@ -22,3 +22,15 @@ class testItem(scrapy.Item):
 class BiliItem(scrapy.Item):
     url = scrapy.Field()
     size = scrapy.Field()
+    title = scrapy.Field()
+
+class ProxyItem(scrapy.Item):
+    ip = scrapy.Field()
+    port = scrapy.Field()
+    protocol = scrapy.Field()
+    connectTime = scrapy.Field()
+
+
+class InfoItem(scrapy.Item):
+    timestamp = scrapy.Field()
+    mid = scrapy.Field()
