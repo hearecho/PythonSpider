@@ -6,6 +6,7 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import os
 import random
 
 class DataSpiderMiddleware(object):
@@ -153,5 +154,17 @@ class RandomHeadersMiddleware(object):
         request.headers["User-Agent"] = random.choice(self.user_agents)
         request.headers["Host"] = request.url.split("/")[2]
         request.headers["Referer"] = "https://space.bilibili.com/"+str(random.randint(1,5000000))+"/"
+
+
+'''
+    当response返回状态值 是403的时候停止爬虫
+    等待一段时间之后再次启动爬虫
+'''
+# class PauseBiliInfoMiddleware(object):
+#     def process_response(self, request, response, spider):
+#         if response.status == 403:
+#             os.system("CTRL")
+#         pass
+
 
 
