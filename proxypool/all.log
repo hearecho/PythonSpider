@@ -1,0 +1,98 @@
+2018-09-28 15:48:54,778 - F:/PythonSpider/spider/proxypool/schedule.py[line:41] - INFO: 代理池开始运行
+2018-09-28 15:48:55,680 - F:\PythonSpider\spider\proxypool\testProxy.py[line:60] - INFO: 测试器开始运行
+2018-09-28 15:48:55,680 - F:\PythonSpider\spider\proxypool\getProxy.py[line:30] - INFO: 获取器开始执行
+2018-09-28 15:48:55,682 - F:\PythonSpider\spider\proxypool\testProxy.py[line:64] - INFO: 当前剩余17个代理
+2018-09-28 15:48:55,682 - F:\PythonSpider\spider\proxypool\crawler.py[line:51] - INFO: Crawling	http://www.66ip.cn/1.html
+2018-09-28 15:48:55,682 - F:\PythonSpider\spider\proxypool\testProxy.py[line:69] - INFO: 正在测试第1-10个代理
+2018-09-28 15:48:55,682 - F:\PythonSpider\spider\proxypool\utils.py[line:27] - INFO: 正在抓取http://www.66ip.cn/1.html
+2018-09-28 15:48:55,684 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	181.196.244.130:53281
+2018-09-28 15:48:55,692 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	175.184.232.210:8080
+2018-09-28 15:48:55,693 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	89.239.105.7:31113
+2018-09-28 15:48:55,693 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	89.200.150.35:39929
+2018-09-28 15:48:55,694 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	147.75.113.74:51963
+2018-09-28 15:48:55,695 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	217.17.98.173:61394
+2018-09-28 15:48:55,695 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	103.104.195.243:8080
+2018-09-28 15:48:55,696 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	47.98.170.8:8000
+2018-09-28 15:48:55,698 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	216.104.207.61:57230
+2018-09-28 15:48:55,698 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	94.231.47.111:51749
+2018-09-28 15:48:56,426 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	47.98.170.8:8000可用，设置为	10
+2018-09-28 15:48:56,426 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	47.98.170.8:8000
+2018-09-28 15:48:56,722 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	181.196.244.130:53281可用，设置为	10
+2018-09-28 15:48:56,724 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	181.196.244.130:53281
+2018-09-28 15:48:56,785 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	94.231.47.111:51749可用，设置为	10
+2018-09-28 15:48:56,786 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	94.231.47.111:51749
+2018-09-28 15:48:56,867 - F:\PythonSpider\spider\proxypool\utils.py[line:31] - INFO: 抓取成功http://www.66ip.cn/1.html200
+2018-09-28 15:48:56,870 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	201.131.195.6:41543
+2018-09-28 15:48:56,871 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	211.159.171.58:80
+2018-09-28 15:48:56,872 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	89.145.186.206:41059
+2018-09-28 15:48:56,873 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	89.200.150.35:39929
+2018-09-28 15:48:56,873 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	47.105.145.251:80
+2018-09-28 15:48:56,873 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	212.101.237.122:54216
+2018-09-28 15:48:56,873 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	46.253.96.185:41258
+2018-09-28 15:48:56,874 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	175.184.232.210:8080
+2018-09-28 15:48:56,874 - F:\PythonSpider\spider\proxypool\crawler.py[line:51] - INFO: Crawling	http://www.66ip.cn/2.html
+2018-09-28 15:48:56,874 - F:\PythonSpider\spider\proxypool\utils.py[line:27] - INFO: 正在抓取http://www.66ip.cn/2.html
+2018-09-28 15:48:56,900 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	89.239.105.7:31113可用，设置为	10
+2018-09-28 15:48:56,901 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	89.239.105.7:31113
+2018-09-28 15:48:56,975 - F:\PythonSpider\spider\proxypool\utils.py[line:31] - INFO: 抓取成功http://www.66ip.cn/2.html200
+2018-09-28 15:48:56,976 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	195.206.184.82:8080
+2018-09-28 15:48:56,977 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	197.234.58.90:43458
+2018-09-28 15:48:56,977 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	47.98.170.8:8000
+2018-09-28 15:48:56,977 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	89.239.105.7:31113
+2018-09-28 15:48:56,977 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	181.196.244.130:53281
+2018-09-28 15:48:56,977 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	5.0.0.815:0
+2018-09-28 15:48:56,977 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	94.231.47.111:51749
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	217.199.106.48:44509
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	90.151.59.222:58358
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	147.75.113.74:51963
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	5.0.0.8:1
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	5.0.0.81:5
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\crawler.py[line:51] - INFO: Crawling	http://www.66ip.cn/3.html
+2018-09-28 15:48:56,978 - F:\PythonSpider\spider\proxypool\utils.py[line:27] - INFO: 正在抓取http://www.66ip.cn/3.html
+2018-09-28 15:48:57,075 - F:\PythonSpider\spider\proxypool\utils.py[line:31] - INFO: 抓取成功http://www.66ip.cn/3.html200
+2018-09-28 15:48:57,078 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	217.17.98.173:61394
+2018-09-28 15:48:57,079 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	103.239.255.193:8080
+2018-09-28 15:48:57,079 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	216.104.207.61:57230
+2018-09-28 15:48:57,080 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	103.104.195.243:8080
+2018-09-28 15:48:57,080 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	174.32.109.38:87
+2018-09-28 15:48:57,081 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	77.104.250.236:53281
+2018-09-28 15:48:57,081 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	195.228.173.14:49032
+2018-09-28 15:48:57,082 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	93.153.29.181:51822
+2018-09-28 15:48:57,082 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	27.131.183.74:8080
+2018-09-28 15:48:57,082 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	45.64.159.134:58342
+2018-09-28 15:48:57,083 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	212.85.67.238:58672
+2018-09-28 15:48:57,083 - F:\PythonSpider\spider\proxypool\crawler.py[line:37] - INFO: 成功获取到代理:	118.70.11.29:36131
+2018-09-28 15:48:57,838 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	103.104.195.243:8080可用，设置为	10
+2018-09-28 15:48:57,839 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	103.104.195.243:8080
+2018-09-28 15:48:58,917 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	216.104.207.61:57230可用，设置为	10
+2018-09-28 15:48:58,918 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	216.104.207.61:57230
+2018-09-28 15:48:59,019 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	147.75.113.74:51963可用，设置为	10
+2018-09-28 15:48:59,020 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	147.75.113.74:51963
+2018-09-28 15:48:59,592 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	217.17.98.173:61394可用，设置为	10
+2018-09-28 15:48:59,593 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	217.17.98.173:61394
+2018-09-28 15:49:00,134 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	175.184.232.210:8080可用，设置为	10
+2018-09-28 15:49:00,136 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	175.184.232.210:8080
+2018-09-28 15:49:01,624 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:53] - INFO: 代理89.200.150.35:39929当前分数10.0减1
+2018-09-28 15:49:01,625 - F:\PythonSpider\spider\proxypool\testProxy.py[line:52] - ERROR: 代理请求失败	89.200.150.35:39929
+2018-09-28 15:49:06,626 - F:\PythonSpider\spider\proxypool\testProxy.py[line:69] - INFO: 正在测试第11-17个代理
+2018-09-28 15:49:06,627 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	77.104.250.236:53281
+2018-09-28 15:49:06,629 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	217.199.106.48:44509
+2018-09-28 15:49:06,631 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	118.70.11.29:36131
+2018-09-28 15:49:06,633 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	89.145.186.206:41059
+2018-09-28 15:49:06,634 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	212.101.237.122:54216
+2018-09-28 15:49:06,636 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	211.159.171.58:80
+2018-09-28 15:49:06,638 - F:\PythonSpider\spider\proxypool\testProxy.py[line:39] - INFO: 正在测试:	93.153.29.181:51822
+2018-09-28 15:49:07,879 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	89.145.186.206:41059可用，设置为	10
+2018-09-28 15:49:07,880 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	89.145.186.206:41059
+2018-09-28 15:49:09,915 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:53] - INFO: 代理212.101.237.122:54216当前分数9.0减1
+2018-09-28 15:49:09,916 - F:\PythonSpider\spider\proxypool\testProxy.py[line:52] - ERROR: 代理请求失败	212.101.237.122:54216
+2018-09-28 15:49:10,962 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:53] - INFO: 代理77.104.250.236:53281当前分数3.0减1
+2018-09-28 15:49:10,963 - F:\PythonSpider\spider\proxypool\testProxy.py[line:52] - ERROR: 代理请求失败	77.104.250.236:53281
+2018-09-28 15:49:11,809 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:75] - INFO: 代理	118.70.11.29:36131可用，设置为	10
+2018-09-28 15:49:11,810 - F:\PythonSpider\spider\proxypool\testProxy.py[line:44] - INFO: 代理可用	118.70.11.29:36131
+2018-09-28 15:49:12,625 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:53] - INFO: 代理211.159.171.58:80当前分数3.0减1
+2018-09-28 15:49:12,626 - F:\PythonSpider\spider\proxypool\testProxy.py[line:52] - ERROR: 代理请求失败	211.159.171.58:80
+2018-09-28 15:49:12,627 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:53] - INFO: 代理93.153.29.181:51822当前分数1.0减1
+2018-09-28 15:49:12,628 - F:\PythonSpider\spider\proxypool\testProxy.py[line:52] - ERROR: 代理请求失败	93.153.29.181:51822
+2018-09-28 15:49:12,630 - F:\PythonSpider\spider\proxypool\RedisSave.py[line:53] - INFO: 代理217.199.106.48:44509当前分数7.0减1
+2018-09-28 15:49:12,631 - F:\PythonSpider\spider\proxypool\testProxy.py[line:52] - ERROR: 代理请求失败	217.199.106.48:44509

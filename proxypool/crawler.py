@@ -6,8 +6,10 @@
 # @File    : crawler.py
 # @Software: PyCharm
 from lxml import etree
-from .utils import get_page
 
+from .LogHnadler import Logger
+from .utils import get_page
+from proxypool.settings import log
 
 class ProxyMetaclass(type):
     def __new__(cls, name, bases, attrs):
@@ -32,7 +34,7 @@ class Crawler(object, metaclass=ProxyMetaclass):
     def get_proxies(self, callback):
         proxies = []
         for proxy in eval("self.{}()".format(callback)):
-            print('成功获取到代理',proxy)
+            log.logger.info("成功获取到代理:\t"+str(proxy))
             proxies.append(proxy)
         return proxies
 
@@ -46,7 +48,7 @@ class Crawler(object, metaclass=ProxyMetaclass):
         start_url = 'http://www.66ip.cn/{}.html'
         urls = [start_url.format(page) for page in range(1, page_count + 1)]
         for url in urls:
-            print('Crawling', url)
+            log.logger.info("Crawling\t"+url)
             html = etree.HTML(get_page(url))
             if len(html):
                 trs = html.xpath("//div[@align='center']//table//tr")

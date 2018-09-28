@@ -6,6 +6,9 @@
 # @File    : settings.py
 # @Software: PyCharm
 
+# 日志
+from .LogHnadler import Logger
+log = Logger("all.log","info")
 # Redis数据库地址
 REDIS_HOST = '127.0.0.1'
 
@@ -46,3 +49,4 @@ API_ENABLED = True
 
 # 最大批测试量
 BATCH_TEST_SIZE = 10
+

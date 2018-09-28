@@ -11,6 +11,7 @@ from proxypool.crawler import Crawler
 from proxypool.settings import *
 import sys
 
+
 class GetProxy(object):
     def __init__(self):
         self.redis = SaveData()
@@ -26,7 +27,7 @@ class GetProxy(object):
             return False
 
     def run(self):
-        print('获取器开始执行')
+        log.logger.info("获取器开始执行")
         if not self.is_over_threshold():
             for callback_label in range(self.crawler.__CrawlFuncCount__):
                 callback = self.crawler.__CrawlFunc__[callback_label]

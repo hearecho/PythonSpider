@@ -8,10 +8,14 @@
 import time
 from multiprocessing import Process
 
+
 from proxypool.getProxy import GetProxy
 from proxypool.testProxy import TestProxy
 from proxypool.RedisSave import SaveData
 from proxypool.settings import *
+
+
+
 
 class Schedule():
     def schedule_tester(self, cycle=TESTER_CYCLE):
@@ -20,7 +24,6 @@ class Schedule():
         """
         tester = TestProxy()
         while True:
-            print('测试器开始运行')
             tester.run()
             time.sleep(cycle)
 
@@ -30,13 +33,12 @@ class Schedule():
         """
         getter = GetProxy()
         while True:
-            print('开始抓取代理')
+            log.logger.info("开始抓取代理")
             getter.run()
             time.sleep(cycle)
 
     def run(self):
-        print('代理池开始运行')
-
+        log.logger.info("代理池开始运行")
         if TESTER_ENABLED:
             tester_process = Process(target=self.schedule_tester)
             tester_process.start()

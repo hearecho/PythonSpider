@@ -8,8 +8,10 @@
 import redis
 from proxypool.settings import REDIS_HOST, REDIS_PORT, REDIS_PASSWORD, REDIS_KEY
 from proxypool.settings import MAX_SCORE, MIN_SCORE, INITIAL_SCORE
+from proxypool.settings import log
 from random import choice
 import re
+
 
 '''
     储存代理到redis数据库
@@ -21,7 +23,7 @@ class SaveData(object):
 
     def add(self,proxy,score=INITIAL_SCORE):
         if not re.match('\d+\.\d+\.\d+\.\d+\:\d+', proxy):
-            print('illegal proxy',str(proxy),'del')
+            log.logger.info("不合法:\t"+str(proxy))
             return
         if not self.db.zscore(REDIS_KEY, proxy):
             return self.db.zadd(REDIS_KEY, score, proxy)
@@ -47,10 +49,12 @@ class SaveData(object):
         """
         score = self.db.zscore(REDIS_KEY, proxy)
         if score and score > MIN_SCORE:
-            print('代理', proxy, '当前分数', score, '减1')
+            # print('代理', proxy, '当前分数', score, '减1')
+            log.logger.info('代理'+str(proxy)+'当前分数'+str(score)+'减1')
             return self.db.zincrby(REDIS_KEY, proxy, -1)
         else:
-            print('代理', proxy, '当前分数', score, '移除')
+            # print('代理', proxy, '当前分数', score, '移除')
+            log.logger.info('代理' + str(proxy) + '当前分数' + str(score) + '移除')
             return self.db.zrem(REDIS_KEY, proxy)
 
     def exists(self, proxy):
@@ -67,7 +71,8 @@ class SaveData(object):
         :param proxy: 代理
         :return: 设置结果
         """
-        print('代理', proxy, '可用，设置为', MAX_SCORE)
+        # print('代理', proxy, '可用，设置为', MAX_SCORE)
+        log.logger.info('代理\t' + str(proxy) +'可用，设置为\t'+str(MAX_SCORE ))
         return self.db.zadd(REDIS_KEY, MAX_SCORE, proxy)
 
     def count(self):
