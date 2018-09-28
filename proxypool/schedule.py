@@ -13,6 +13,7 @@ from proxypool.getProxy import GetProxy
 from proxypool.testProxy import TestProxy
 from proxypool.RedisSave import SaveData
 from proxypool.settings import *
+from proxypool.app import app
 
 
 
@@ -37,6 +38,9 @@ class Schedule():
             getter.run()
             time.sleep(cycle)
 
+    def schedule_api(self):
+        app.run(API_HOST,API_PORT)
+
     def run(self):
         log.logger.info("代理池开始运行")
         if TESTER_ENABLED:
@@ -46,6 +50,10 @@ class Schedule():
         if GETTER_ENABLED:
             getter_process = Process(target=self.schedule_getter)
             getter_process.start()
+
+        if API_ENABLED:
+            api_process = Process(target=self.schedule_api())
+            api_process.start()
 
 
 if __name__ == '__main__':
