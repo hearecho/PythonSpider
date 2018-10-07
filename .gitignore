@@ -10,3 +10,5 @@ yundownload/utils/__pycache__/
 "\345\237\272\347\241\200/\345\215\217\347\250\213/test/"
 /spiderEnv/
 /scrapy/data/saveData/
+/scrapy/data/zip/
+/proxypool/all.log
